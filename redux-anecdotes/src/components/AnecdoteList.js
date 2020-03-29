@@ -13,7 +13,6 @@ const AnecdoteList = () => {
 
   return (
     <div>
-      <h2>Anecdotes</h2>
       {anecdotes
         .sort((a, b) => (a.votes > b.votes ? -1 : 1))
         .map(anecdote => (
